@@ -11,6 +11,6 @@ Este é um projeto Java que implementa um sistema de carrinho de compras para um
 1. Clone este repositório para o seu ambiente de desenvolvimento.
 2. Certifique-se de ter o Java JDK (versão 8 ou superior) instalado.
 3. Importe o projeto em sua IDE preferida.
-4. Crie um banco de dados PostgreSQL e configure a conexão no arquivo application.properties.
-5. Execute o arquivo .sql no agAdmin para criar as tabelas necessárias e inserir os produtos de exemplo.
+4. Crie um banco de dados PostgreSQL e configure a conexão no arquivo "ConnectionFactory.java", na pasta "util".
+5. Execute o arquivo initialize_database.sql no pgAdmin para criar as tabelas necessárias e inserir os produtos de exemplo.
 6. Compile e execute o projeto a partir do arquivo Main.java.

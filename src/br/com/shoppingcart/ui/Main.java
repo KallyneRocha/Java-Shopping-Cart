@@ -182,7 +182,7 @@ public class Main {
                                 shoppingCart.addProduct(productToAdd, quantity);
                                 productToAdd.setQuantityAvailable(productToAdd.getQuantityAvailable() - quantity);
                                 productDAO.update(productToAdd);
-                                cartDAO.addProductToCart(productId, quantity);
+                                cartDAO.insert(productId, quantity);
                                 System.out.println("Product added to cart successfully!");
                             } else {
                                 System.out.println("Insufficient quantity available for the product!");
@@ -206,7 +206,7 @@ public class Main {
                         }
 
                         if (cartItemToRemove != null) {
-                            cartDAO.removeProduct(productId);
+                            cartDAO.delete(productId);
                             ProductModel product = cartItemToRemove.getProduct();
                             product.setQuantityAvailable(product.getQuantityAvailable() + cartItemToRemove.getQuantity());
                             productDAO.update(product);

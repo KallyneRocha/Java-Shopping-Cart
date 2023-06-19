@@ -100,7 +100,7 @@ public class ProductDAO implements DAO<ProductModel> {
     public void delete(int id) throws SQLException {
         String sql = "DELETE FROM products WHERE id = ?";
         ShoppingCartDAO cartDAO = new ShoppingCartDAO(connection);
-        cartDAO.removeProduct(id);
+        cartDAO.delete(id);
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
             statement.setInt(1, id);

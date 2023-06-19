@@ -8,14 +8,14 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ShoppingCartDAO {
+public class ShoppingCartDAO{
     private Connection connection;
 
     public ShoppingCartDAO(Connection connection) {
         this.connection = connection;
     }
 
-    public void addProductToCart(int productId, int quantity) throws SQLException {
+    public void insert(int productId, int quantity) throws SQLException {
         String sql = "INSERT INTO shopping_cart (product_id, quantity) VALUES ( ?, ?)";
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {
@@ -26,7 +26,7 @@ public class ShoppingCartDAO {
         }
     }
 
-    public void removeProduct(int productId) throws SQLException {
+    public void delete(int productId) throws SQLException {
         String sql = "DELETE FROM shopping_cart WHERE product_id = ?";
 
         try (PreparedStatement statement = connection.prepareStatement(sql)) {

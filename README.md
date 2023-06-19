@@ -1,16 +1,16 @@
 # Java-Shopping-Cart
-Este é um projeto Java que implementa um sistema de carrinho de compras para uma loja. O projeto utiliza JDBC para interagir com um banco de dados PostgreSQL.
+This is a Java project that implements a shopping cart system for a store. The project uses JDBC to interact with a PostgreSQL database.
 
-## Funcionalidades
-1. Listar, atualizar, adicionar e remover produtos da loja.
-2. Adicionar e remover produtos do carrinho.
-3. Exibir valor total dos itens no carrinho.
-4. Opção de finalizar a compra, com confirmação do usuário.
+## Features
+1. List, update, add, and remove products from the store.
+2. List, add and remove products from the shopping cart.
+3. Display the total value of items in the cart.
+4. Option to finish the purchase with user confirmation.
 
-## Configuração do Projeto
-1. Clone este repositório para o seu ambiente de desenvolvimento.
-2. Certifique-se de ter o Java JDK (versão 8 ou superior) instalado.
-3. Importe o projeto em sua IDE preferida.
-4. Crie um banco de dados PostgreSQL e configure a conexão no arquivo "ConnectionFactory.java", na pasta "util".
-5. Execute o arquivo initialize_database.sql no pgAdmin para criar as tabelas necessárias e inserir os produtos de exemplo.
-6. Compile e execute o projeto a partir do arquivo Main.java.
+## Project Setup
+1. Clone this repository to your environment.
+2. Make sure you have Java JDK (version 8 or higher) installed.
+3. Import the project into your favorite IDE.
+4. Create a PostgreSQL database and configure the connection in the "ConnectionFactory.java" file, inside the "util" folder.
+5. Execute the "initialize_database.sql" file in pgAdmin to create the necessary tables and insert the example products.
+6. Compile and run the project from the "Main.java" file.

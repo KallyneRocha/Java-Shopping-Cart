@@ -1,7 +1,8 @@
 package br.com.shoppingcart.model;
 
 public class ProductModel {
-    private String id;
+
+    private int id;
     private String name;
     private double price;
     private int quantityAvailable;
@@ -9,18 +10,19 @@ public class ProductModel {
     public ProductModel(String name, double price, int quantityAvailable) {
         // Validação das entradas
         if (name == null || price <= 0 || quantityAvailable < 0) {
-            throw new IllegalArgumentException("mensagem de erro");
+            throw new IllegalArgumentException("Sorry, something went wrong. Please, check the product information and try again.");
         }
+
         this.name = name;
         this.price = price;
         this.quantityAvailable = quantityAvailable;
     }
 
-    public String getId() {
+    public int getId() {
         return id;
     }
 
-    public void setId(String id) {
+    public void setId(int id) {
         this.id = id;
     }
 
@@ -44,7 +46,7 @@ public class ProductModel {
         return quantityAvailable;
     }
 
-    public void setQuantityAv(int quantityAvailable) {
+    public void setQuantityAvailable(int quantityAvailable) {
         this.quantityAvailable = quantityAvailable;
     }
 }

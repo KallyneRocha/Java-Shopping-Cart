@@ -9,7 +9,7 @@ This is a Java project that implements a shopping cart system for a store. The p
 
 ## Project Setup
 1. Clone this repository to your environment.
-2. Make sure you have Java JDK (version 8 or higher) installed.
+2. Make sure you have Java JDK (version 17 or higher) installed.
 3. Import the project into your favorite IDE.
 4. Create a PostgreSQL database and configure the connection in the "ConnectionFactory.java" file, inside the "util" folder.
 5. Execute the "initialize_database.sql" file in pgAdmin to create the necessary tables and insert the example products.
